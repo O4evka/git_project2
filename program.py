@@ -57,8 +57,8 @@ def process_answer_step(message):
                 if ans[i] > ans[idi]:
                     idi = i
             result = results[idi]
-            a = telebot.types.ReplyKeyboardRemove()
-            bot.send_message(message.chat.id, f"Ты - {result}. Поздравляю!", reply_markup=a)
+            c = telebot.types.ReplyKeyboardRemove()
+            bot.send_message(message.chat.id, f"Ты - {result}. Поздравляю!", reply_markup=c)
             count = -1
         else:
             markup = telebot.types.ReplyKeyboardMarkup()
